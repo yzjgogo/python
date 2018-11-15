@@ -39,7 +39,7 @@ class Pen:
 主要通过监听局域网服务器端口，实现外部访问
 http://greyli.com/use-ngrok-to-expose-your-local-application/
 http://pagekite.net/  官网会识别你的系统显示使用方法。
-推荐pagekite
+推荐pagekite,因为对于免费用户ngrok的链接是动态的，而pagekite可以自定义
 '''
 
 app = Flask(__name__)
@@ -162,5 +162,5 @@ def signin():
 if __name__ == '__main__':
 	#192.168.190.134 is this computer's ip,through  this we can visit the flask server on out internet.attention is you should close the firewall of the computer.
 	#app.run(host='192.168.190.134', port=8000,debug=True)
-	app.run()
+	app.run()#default port is 5000
 
