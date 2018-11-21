@@ -37,9 +37,14 @@ class Pen:
 '''
 使用ngrok或pagekite让你的本地Flask程序外网可访问
 主要通过监听局域网服务器端口，实现外部访问
-http://greyli.com/use-ngrok-to-expose-your-local-application/
+ngrok:
+ http://greyli.com/use-ngrok-to-expose-your-local-application/
+
+pagekite:
 http://pagekite.net/  官网会识别你的系统显示使用方法。
 推荐pagekite,因为对于免费用户ngrok的链接是动态的，而pagekite可以自定义
+pagekite每注册一次好像使用时间有限制，如果不能用了，可以清除~/.pagekite.rc等类似文件，然后执行
+[sudo] python2 pagekite.py 5000 yourname.pagekite.me重新注册即可
 '''
 
 app = Flask(__name__)
